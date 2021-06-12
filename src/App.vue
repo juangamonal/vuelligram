@@ -1,29 +1,35 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
+    <!-- blockquote -->
+    <section class="container">
+      <h3>Blockquote</h3>
+      <MBlockquote></MBlockquote>
+    </section>
+
+    <!-- Button -->
+    <section class="container">
+      <h3>Button</h3>
+      <m-button>Normal</m-button>
+      <m-button m-type="clear">Clear</m-button>
+      <m-button m-type="outline">Outline</m-button>
+    </section>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import HelloWorld from "./components/HelloWorld.vue";
+import MBlockquote from "./components/Blockquote.vue";
+import MButton from "./components/Button.vue";
 
 @Component({
   components: {
-    HelloWorld,
-  },
+    MBlockquote,
+    MButton
+  }
 })
 export default class App extends Vue {}
 </script>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="sass">
+@import './assets/vuelligram.sass'
 </style>
