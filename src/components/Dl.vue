@@ -2,7 +2,7 @@
   <dl>
     <template v-for="(e, i) in items">
       <dt :key="i">{{ e.value }}</dt>
-      <dd v-for="(c, j) in e.children" :key="j">{{ c }}</dd>
+      <dd v-for="(c, j) in e.children" :key="`${i}-${j}`">{{ c }}</dd>
     </template>
   </dl>
 </template>
