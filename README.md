@@ -1,6 +1,6 @@
 # Vuelligram
 
-Vuelligram is a stupidly lightweight component library based on the [Milligram CSS Framework](https://milligram.io/).
+Vuelligram is a stupidly lightweight components library based on the [Milligram CSS Framework](https://milligram.io/).
 
 ## Installation
 
