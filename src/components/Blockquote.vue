@@ -1,7 +1,7 @@
 <template>
-	<blockquote>
-		<p><em>Yeah!! Vuelligram is amazing.</em></p>
-	</blockquote>
+  <blockquote>
+    <slot />
+  </blockquote>
 </template>
 
 <script lang="ts">
