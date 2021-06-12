@@ -26,8 +26,11 @@ export default {
 
 ## Components
 
-- Blockquote
-- Button
+- Blockquotes
+- Buttons
+- Tables
+- Lists
+- Forms
 
 ## Project setup
 ```
