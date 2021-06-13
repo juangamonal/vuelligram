@@ -1,7 +1,7 @@
 <template>
   <div>
     <label v-if="label" :for="$attrs.name">{{ label }}</label>
-    <select :type="type" v-bind="$attrs" v-slot="model">
+    <select :type="type" v-bind="$attrs" v-model="model">
       <slot />
     </select>
   </div>

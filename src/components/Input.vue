@@ -3,7 +3,7 @@
     <label v-if="label && type !== 'checkbox'" :for="$attrs.id">{{
       label
     }}</label>
-    <input :type="type" v-bind="$attrs" v-model="model"/>
+    <input :type="type" v-bind="$attrs" v-model="model" />
     <label
       class="label-inline"
       v-if="label && type === 'checkbox'"
