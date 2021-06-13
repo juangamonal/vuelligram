@@ -16,8 +16,8 @@
       <h5>Types</h5>
       <p>
         <m-button>Normal</m-button>
-        <m-button m-type="clear">Clear</m-button>
         <m-button m-type="outline">Outline</m-button>
+        <m-button m-type="clear">Clear</m-button>
       </p>
 
       <h5>Sizes</h5>
@@ -46,25 +46,28 @@
           <m-button>Button 3</m-button>
         </m-button-group>
       </p>
+      <h5>Small outline</h5>
       <p>
         <m-button-group m-type="outline" size="small">
-          <m-button>Button 1</m-button>
-          <m-button>Button 2</m-button>
-          <m-button>Button 3</m-button>
+          <m-button>Outline button 1</m-button>
+          <m-button>Outline button 2</m-button>
+          <m-button>Outline button 3</m-button>
         </m-button-group>
       </p>
+      <h5>Large clear</h5>
       <p>
         <m-button-group m-type="clear" size="large">
-          <m-button>Button 1</m-button>
-          <m-button>Button 2</m-button>
-          <m-button>Button 3</m-button>
+          <m-button>Clear button 1</m-button>
+          <m-button>Clear button 2</m-button>
+          <m-button>Clear button 3</m-button>
         </m-button-group>
       </p>
+      <h5>Expanded</h5>
       <p>
         <m-button-group expanded>
-          <m-button>Button 1</m-button>
-          <m-button>Button 2</m-button>
-          <m-button>Button 3</m-button>
+          <m-button>Expanded button 1</m-button>
+          <m-button>Expanded button 2</m-button>
+          <m-button>Expanded button 3</m-button>
         </m-button-group>
       </p>
     </section>
