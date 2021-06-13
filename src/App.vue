@@ -3,6 +3,7 @@
     <!-- blockquote -->
     <section class="container">
       <h3>Blockquote</h3>
+
       <m-blockquote>
         <p><em>Yeah!! Milligram is amazing.</em></p>
       </m-blockquote>
@@ -11,22 +12,38 @@
     <!-- button -->
     <section class="container">
       <h3>Button</h3>
+
+      <h5>Types</h5>
       <p>
         <m-button>Normal</m-button>
         <m-button m-type="clear">Clear</m-button>
         <m-button m-type="outline">Outline</m-button>
+      </p>
+
+      <h5>Sizes</h5>
+      <p>
+        <m-button size="small">Small</m-button>
+        <m-button>Normal</m-button>
+        <m-button size="large">Large</m-button>
+      </p>
+
+      <h5>Expanded</h5>
+      <p>
+        <m-button expanded>Expanded</m-button>
       </p>
     </section>
 
     <!-- table -->
     <section class="container">
       <h3>Table</h3>
+
       <m-table :columns="table.columns" :data="table.data" />
     </section>
 
     <!-- list -->
     <section class="container">
       <h3>Lists</h3>
+
       <div class="row">
         <div class="column">
           <m-ul :items="ulItems" />
@@ -43,6 +60,7 @@
     <!-- forms -->
     <section class="container">
       <h3>Forms</h3>
+
       <form>
         <fieldset>
           <m-input label="Name" name="name" placeholder="Juan Gamonal" />
@@ -66,6 +84,7 @@
     <!-- code -->
     <section class="container">
       <h3>Code</h3>
+
       <m-code :code="code" />
     </section>
   </div>
@@ -148,5 +167,5 @@ export default class App extends Vue {
 </script>
 
 <style lang="sass">
-@import './assets/vuelligram.sass'
+@import './vuelligram.sass'
 </style>

@@ -8,25 +8,56 @@
 import { Component, Prop, Vue } from "vue-property-decorator";
 
 type ButtonType = "normal" | "clear" | "outline";
+type ButtonSize = "normal" | "small" | "large";
 
 @Component
 export default class MButton extends Vue {
-  @Prop({ type: String })
-  readonly mType!: ButtonType;
+  @Prop({ default: "normal", type: String }) readonly mType!: ButtonType;
 
-  get className(): string | null {
+  @Prop({ default: false, type: Boolean }) readonly expanded!: boolean;
+
+  @Prop({ default: "normal", type: String }) readonly size!: ButtonSize;
+
+  get className(): string {
+    let str = "";
+
     if (this.mType) {
       switch (this.mType) {
         case "normal":
-          return null;
+          break;
         case "clear":
-          return "button-clear";
+          str += "button-clear";
+          break;
         case "outline":
-          return "button-outline";
+          str += "button-outline";
+          break;
         default:
           throw new Error(`Invalid button type value: '${this.mType}'`);
       }
-    } else return null;
+    }
+
+    if (this.size) {
+      if (this.mType) str += " ";
+
+      switch (this.size) {
+        case "normal":
+          break;
+        case "small":
+          str += "button-small";
+          break;
+        case "large":
+          str += "button-large";
+          break;
+        default:
+          throw new Error(`Invalid button size value: '${this.size}'`);
+      }
+    }
+
+    if (this.expanded) {
+      str += `${this.mType || this.size ? " " : ""}button-expanded`;
+    }
+
+    return str;
   }
 }
 </script>

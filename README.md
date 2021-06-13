@@ -28,10 +28,10 @@ export default {
 
 - Blockquotes
 - Buttons
-- Tables
-- Lists
-- Forms (Input, Select, Textarea)
 - Code
+- Forms (Input, Select, Textarea)
+- Lists
+- Tables
 
 ## Project setup
 ```
