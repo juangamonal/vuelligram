@@ -1,5 +1,5 @@
 <script lang="ts">
-import { Component, Prop, Vue } from "vue-property-decorator";
+import { Component, Prop, VModel,Vue } from "vue-property-decorator";
 
 export type Label = string | undefined;
 
@@ -7,5 +7,8 @@ export type Label = string | undefined;
 export default class InputBase extends Vue {
   @Prop({ type: String })
   readonly label!: Label;
+
+  @VModel()
+  protected model!: any;
 }
 </script>

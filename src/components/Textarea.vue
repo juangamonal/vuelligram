@@ -1,7 +1,7 @@
 <template>
   <div>
     <label v-if="label" :for="$attrs.name">{{ label }}</label>
-    <textarea v-bind="$attrs" />
+    <textarea v-bind="$attrs" v-model="model"/>
   </div>
 </template>
 
