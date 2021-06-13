@@ -1,12 +1,13 @@
 {
   "name": "vuelligram",
   "description": "Vuelligram is a stupidly lightweight components library based on the Milligram CSS Framework",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "author": {
     "name" : "Juan Gamonal H",
     "email" : "juangamonalh@gmail.com",
     "url" : "https://github.com/juangamonal"
   },
+  "main": "src/index.ts",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build --target lib src/index.ts",

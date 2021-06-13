@@ -1,13 +1,13 @@
 <template>
   <div>
-    <label v-if="label && type !== 'checkbox'" :for="$attrs.name">{{
+    <label v-if="label && type !== 'checkbox'" :for="$attrs.id">{{
       label
     }}</label>
     <input :type="type" v-bind="$attrs" />
     <label
       class="label-inline"
       v-if="label && type === 'checkbox'"
-      :for="$attrs.name"
+      :for="$attrs.id"
       >{{ label }}</label
     >
   </div>
