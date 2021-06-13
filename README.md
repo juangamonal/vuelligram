@@ -1,4 +1,4 @@
-# Vuelligram
+![Logo](src/assets/logo.png)
 
 Vuelligram is a stupidly lightweight components library based on the [Milligram CSS Framework](https://milligram.io/).
 
