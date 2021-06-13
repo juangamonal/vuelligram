@@ -5,7 +5,7 @@
       <h3>Blockquote</h3>
 
       <m-blockquote>
-        <p><em>Yeah!! Milligram is amazing.</em></p>
+        <p><em>Yeah!! Vuelligram is amazing.</em></p>
       </m-blockquote>
     </section>
 
@@ -29,7 +29,36 @@
 
       <h5>Expanded</h5>
       <p>
-        <m-button expanded>Expanded</m-button>
+        <m-button expanded>Expanded normal</m-button>
+        <m-button m-type="clear" expanded>Expanded clear</m-button>
+        <m-button m-type="outline" expanded>Expanded outline</m-button>
+      </p>
+    </section>
+
+    <!-- button group -->
+    <section class="container">
+      <h3>Button group</h3>
+
+      <p>
+        <m-button-group>
+          <m-button>Button 1</m-button>
+          <m-button>Button 2</m-button>
+          <m-button>Button 3</m-button>
+        </m-button-group>
+      </p>
+      <p>
+        <m-button-group m-type="outline" size="small">
+          <m-button>Button 1</m-button>
+          <m-button>Button 2</m-button>
+          <m-button>Button 3</m-button>
+        </m-button-group>
+      </p>
+      <p>
+        <m-button-group m-type="clear" size="large">
+          <m-button>Button 1</m-button>
+          <m-button>Button 2</m-button>
+          <m-button>Button 3</m-button>
+        </m-button-group>
       </p>
     </section>
 
@@ -95,6 +124,7 @@ import { Component, Vue } from "vue-property-decorator";
 import {
   MBlockquote,
   MButton,
+  MButtonGroup,
   MCode,
   MInput,
   MTable,
@@ -109,6 +139,7 @@ import {
   components: {
     MBlockquote,
     MButton,
+    MButtonGroup,
     MCode,
     MInput,
     MSelect,

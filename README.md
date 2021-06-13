@@ -28,6 +28,7 @@ export default {
 
 - Blockquotes
 - Buttons
+- Buttons group
 - Code
 - Forms (Input, Select, Textarea)
 - Lists

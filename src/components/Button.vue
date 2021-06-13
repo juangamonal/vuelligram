@@ -5,26 +5,16 @@
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue } from "vue-property-decorator";
-
-type ButtonType = "normal" | "clear" | "outline";
-type ButtonSize = "normal" | "small" | "large";
+import ButtonBase from "./base/button";
+import { Component } from "vue-property-decorator";
 
 @Component
-export default class MButton extends Vue {
-  @Prop({ default: "normal", type: String }) readonly mType!: ButtonType;
-
-  @Prop({ default: false, type: Boolean }) readonly expanded!: boolean;
-
-  @Prop({ default: "normal", type: String }) readonly size!: ButtonSize;
-
+export default class MButton extends ButtonBase {
   get className(): string {
     let str = "";
 
     if (this.mType) {
       switch (this.mType) {
-        case "normal":
-          break;
         case "clear":
           str += "button-clear";
           break;
@@ -40,8 +30,6 @@ export default class MButton extends Vue {
       if (this.mType) str += " ";
 
       switch (this.size) {
-        case "normal":
-          break;
         case "small":
           str += "button-small";
           break;
