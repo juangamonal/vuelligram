@@ -39,23 +39,62 @@
         </div>
       </div>
     </section>
+
+    <!-- forms -->
+    <section class="container">
+      <h3>Forms</h3>
+      <form>
+        <fieldset>
+          <m-input label="Name" name="name" placeholder="Juan Gamonal" />
+          <m-select label="Age Range" name="age-range">
+            <option value="0-13">0-13</option>
+            <option value="14-17">14-17</option>
+            <option value="18-23">18-23</option>
+            <option value="24+">24+</option>
+          </m-select>
+          <m-textarea label="Comment" name="comment" placeholder="Hi Juan..." />
+          <m-button>Send</m-button>
+          <m-input
+            class="float-right"
+            label="Send a copy to yourself"
+            type="checkbox"
+          />
+        </fieldset>
+      </form>
+    </section>
+
+    <!-- code -->
+    <section class="container">
+      <h3>Code</h3>
+      <m-code :code="code" />
+    </section>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import MBlockquote from "./components/Blockquote.vue";
-import MButton from "./components/Button.vue";
-import MTable from "./components/Table.vue";
-import MDl from "./components/Dl.vue";
-import MOl from "./components/Ol.vue";
-import MUl from "./components/Ul.vue";
+import {
+  MBlockquote,
+  MButton,
+  MCode,
+  MInput,
+  MTable,
+  MSelect,
+  MTextarea,
+  MDl,
+  MOl,
+  MUl,
+} from "./index";
 
 @Component({
   components: {
     MBlockquote,
     MButton,
+    MCode,
+    MInput,
+    MSelect,
     MTable,
+    MTextarea,
     MDl,
     MOl,
     MUl,
@@ -101,6 +140,10 @@ export default class App extends Vue {
       children: ["Description list item 1.1"],
     },
   ];
+
+  readonly code = `.milligram {
+    color: #9b4dca;
+}`;
 }
 </script>
 

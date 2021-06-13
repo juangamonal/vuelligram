@@ -9,5 +9,5 @@ import ListBase, { ItemType } from "./ListBase.vue";
 import { Component } from "vue-property-decorator";
 
 @Component
-export default class MUl extends ListBase<ItemType> {}
+export default class MOl extends ListBase<ItemType> {}
 </script>

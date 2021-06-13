@@ -35,7 +35,7 @@ export default class MTable extends Vue {
   @Prop({ required: true, type: Array })
   readonly data!: Map<string, CellType>[];
 
-  @Prop({ default: true, required: false, type: Boolean })
+  @Prop({ default: true, type: Boolean })
   readonly showHeader!: boolean;
 }
 </script>

@@ -11,7 +11,7 @@ type ButtonType = "normal" | "clear" | "outline";
 
 @Component
 export default class MButton extends Vue {
-  @Prop({ required: false, type: String })
+  @Prop({ type: String })
   readonly mType!: ButtonType;
 
   get className(): string | null {

@@ -30,7 +30,8 @@ export default {
 - Buttons
 - Tables
 - Lists
-- Forms
+- Forms (Input, Select, Textarea)
+- Code
 
 ## Project setup
 ```

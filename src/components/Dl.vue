@@ -17,5 +17,5 @@ interface Item {
 }
 
 @Component
-export default class MUl extends ListBase<Item> {}
+export default class MDl extends ListBase<Item> {}
 </script>
