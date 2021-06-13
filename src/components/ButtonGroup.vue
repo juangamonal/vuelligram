@@ -9,13 +9,12 @@ export default class MButtonGroup extends ButtonBase {
   render(h: CreateElement): VNode {
     const props = {
       mType: this.mType,
-      expanded: this.expanded,
       size: this.size,
     };
 
     return h(
       "div",
-      { class: "button-group" },
+      { class: { "button-group": true, "button-expanded": this.expanded } },
       this.$slots.default?.map((s) =>
         h(MButton, { props }, s.componentOptions?.children)
       )
